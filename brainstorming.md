@@ -65,11 +65,18 @@ Mobile App Dev - GearSwap
    - **Habit:** Regular browsing. User can browse anytime of the day
    - Scope: Launch schedule, launch details, filter, search, notifications, launch updates and user preferences
    
-4. FindAFix
-   - **Description**: A vehichle owner in need of convienient and reliable mobile services
-   - **Category:** Social
-   - **Mobile:** Mobile first experience
-   - **Story:** As a vehicle owner facing an unexpected car issue, I open the Mobile Mechanic app to quickly find assistance.
-   - **Market:** Individual vehicle owners, commercial vehicle owners and fleet owners and managers 
-   - **Habit:** Regular browsing. User can browse for any time of the day
-   - **Scope:** User registration and authentication, vehicle profile management, serice request booking, mechanic matching and dispatch, service tracking and payment processing
+### 3. FindAFix
+
+- **Description**: Mechanics Finder
+- **Category**: Service Locator
+- **Mobile**: Highly mobile-centric, utilizing location to find nearby mechanics, push notifications for status updates on service requests, and real-time tracking of mechanic arrivals. Additionally, integration with mobile payments would improve user experience.
+- **Story**: The app directly addresses the stress and urgency of dealing with vehicle repairs, providing quick and reliable solutions. It's particularly valuable for those with limited knowledge of mechanics or those in urgent need of repairs.
+
+    - A car owner balancing daily transportation needs with a busy schedule seeks a quick way to find nearby mechanics for both routine maintenance and non-urgent repairs, ensuring their vehicle stays reliable without disrupting their routine.
+    - A small business owner managing a fleet of vehicles requires a reliable platform to locate mechanics who can efficiently handle routine maintenance and repairs, minimizing downtime and keeping operations smooth.
+    - A frequent traveler desires access to a mobile app that can quickly connect them with trusted mechanics in unfamiliar locations, ensuring they can address any vehicle issues during their trips without delay.
+
+
+- **Market**: Has a broad potential user base including individual car owners, commercial vehicle fleets, and rental companies, all of whom require timely and efficient mechanic services.
+- **Habit**: While not used daily, the app aims to be the go-to solution whenever automotive issues arise, ensuring high engagement during those periods. Users primarily consume services but also contribute by reviewing and rating mechanics.
+- **Scope**: Back-end systems for handling service bookings, mechanic matching, user and mechanic profiles, payment processing, and customer support. An MVP focusing on the most critical services—mechanic discovery and/or emergency reapairs would attract and retain users.
