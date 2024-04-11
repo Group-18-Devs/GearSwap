@@ -47,14 +47,37 @@ Mobile App Dev - GearSwap
 3. FindAFix
 
 ## New App Ideas - Evaluate and Categorize
-1. **GearSwap**
-   - **Description**: A sports equipment sharing app
-   - **Category:** Social
-   - **Mobile:** Mobile first experience
-   - **Story:** As a athlete interested in trying out different equipment or seeking specific gear for a project, I visit the Gear Swap app.
-   - **Market:** Sports enthusiast, local teams, students and beginners 
-   - **Habit:** Regular Browsing. User can browse, post and purchase anytime a day
-   - **Scope:** 1.Planning, UX/UI design,Frontend/Backend development, Listing management,Communication and messaging and payment processing.
+### 1. GearSwap
+
+- **Description**: A sports equipment rental/sharing app.
+
+- **Category**: Sharing Economy, Sports
+
+- **Mobile**: Uses location services for nearby equipment, push notifications for availability updates, and camera functionality for posting gear pictures.
+    - **Location Services**: Uses GPS to show available equipment nearby, enhancing the convenience of finding and renting sports gear directly from the app.
+	- **Push Notifications**: Sends updates about equipment availability, rental confirmations, and reminders for equipment returns.
+	- **Camera Integration**: Allows users to upload photos of their equipment, which can help in listing and verifying the condition of the items.
+	- **Chat/Messaging Feature**: Facilitates real-time communication among users, enabling discussions, collaboration, and the exchange of information within the community.
+
+- **Story**: GearSwap provides a community-driven platform for athletes to access a variety of sports equipment without the need to purchase them outright. It promotes sustainability and cost-efficiency, making it compelling for users who are cost-conscious or those trying new sports. The goal of GearSwap is to create a user-friendly, community-driven platform for renting and sharing sports equipment, which reduces the cost burden of trying new sports and facilitates an active lifestyle.
+     -	**Organizer for a Beach Volleyball Event**: Organizer is organizing a beach volleyball event but the org/group does not have enough nets. Organizer rents volleyball nets and balls through GearSwap from local sports enthusiasts who list their equipment when not in use. The event is a success with all necessary equipment, and Organizer saves on costs while ensuring a fun day for participants.
+ 	- **Weekend Cyclist**: Cyclist wants to explore mountain biking but only has a road bike. He uses GearSwap to rent a mountain bike posted by someone in his city.Cyclist enjoys a weekend of mountain biking and gains enough experience to make an informed decision about buying his own mountain bike.
+	- **Family Vacation/Getaway**. A family wants to try kayaking during their lake house vacation but doesn't want to invest in buying kayaks just yet.They search GearSwap and find a nearby listing where they can rent kayaks for the week. The family enjoys their kayaking experience and considers renting again for future trips or possibly buying their own kayaks.
+	- **Beginner Athletes**: A user new to a sport like tennis could use the chatbot to find out what kind of racquet is best for beginners, the appropriate size for their height, and tips on basic strokes.
+	- **Seasoned Sports Enthusiasts**: A seasoned skier planning to try snowboarding might use GearSwap to rent snowboarding gear for a season before deciding whether to invest in their own. They benefit from user reviews to choose the best equipment.
+	- **Families**: A family interested in camping but without the necessary gear can use GearSwap to rent equipment for their weekend getaway. They interact with the chatbot to ensure they get all the necessary items and proper sizes for all family members.
+	- **Event Organizers**: Local sports event organizers use GearSwap to provide attendees with necessary equipment, ensuring participants have access to everything they need without having to buy new gear.
+
+- **Scope**:The technical scope includes user registration, equipment listing, search and filtering capabilities, transaction processing, and reputation management.Starting with basic rental features and gradually integrating AI-driven recommendations and a robust chatbot can make GearSwap a go-to app in the sports community. A minimal MVP with basic listing and renting functionality would still be appealing and feasible within a limited timeframe.
+    - **User Interface**: Designing an interface that allows for easy uploading, browsing, and renting of sports equipment. It needs to be intuitive enough for all age groups and tech-savvy levels.
+    - **Backend System**: A robust backend system is essential for managing the large volumes of data and interactions on the app. This system should handle user management, equipment listings, transactions, and communications efficiently. It would also support the chatbot, recommendation engine, and dynamic pricing model by processing real-time data and user inputs securely.
+    - **Security and Payments**: Ensuring secure transactions and protecting user data, especially for payments and personal information shared during rentals.
+    - **AI-Powered Chatbot**: A chatbot equipped to assist users in determining the type of equipment they need based on the sport, their skill level, and other preferences. It can also provide guidance on sizing, basic usage instructions, and maintenance tips.
+    - **Recommendation Engine**: Utilizes user data and preferences to suggest equipment that matches their needs and previous activities. This can help new users find equipment that suits their level of expertise or interests.
+    - **Dynamic Pricing Model**: AI algorithms can analyze demand and supply data to suggest optimal rental prices for listed equipment, benefiting both lenders and borrowers.
+    - **User Reviews and Ratings**: After using the equipment, renters can rate and review both the gear and the lender. This feature helps build trust and ensures high-quality listings.
+    - **Community Forums**: A section where users can discuss different sports, share experiences, and give advice on equipment use, which strengthens the community aspect of the app.
+    - **Skill-Based Workshops and Events**: The app can promote or organize local sports events and workshops, encouraging users to try new sports or improve their skills, thus increasing the app’s usage.
    
 ### 2. Latest Launch
 
