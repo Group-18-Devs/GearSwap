@@ -31,19 +31,21 @@ Mobile App Dev - GearSwap
 2. Fitness Tracking & Coaching: JBear Fitness
 3. Baking Social Media: BakeMate
 4. News Aggregator and Writer: QuickNews
-5. Productivty Tracker & Coach: **[TODO]**
-6. Insurance Policy Comparison: **[TODO]**
+5. Productivty Tracker & Coach: FocusForge
+6. Insurance Policy Comparison: PolicyPal
 7. Medical Test Finder: MediSavings  
 8. Sporting Good Rentals: GearSwap
 9. Mechanics Finder: FindAFix
 10. Fashion Picker:  FashionFinder
-11. Local Coding meet up : **[TODO]**
-12. Short term rental management 
-13. Recipe Finder 
+11. Local Coding Meet-up: CodeConnect
+12. Short Term Rental Management: StaySteward
+13. Recipe Finder: DishDiscover
+
 ## Top 3 New App Ideas
 1. GearSwap
 2. Lastest Launch
 3. FindAFix
+
 ## New App Ideas - Evaluate and Categorize
 1. **GearSwap**
    - **Description**: A sports equipment sharing app
