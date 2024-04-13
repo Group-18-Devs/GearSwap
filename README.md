@@ -116,7 +116,7 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
   - Option to edit profile details or view own listings and rentals.
 
 ## Wireframes
-![Figma WireFrame](https://github.com/Group-18-Devs/GearSwap/assets/106501057/9048f41c-3e12-45ca-a673-b4556d22a293)
+![Figma WireFrame](https://github.com/Group-18-Devs/GearSwap/assets/106501057/8689031f-0d57-43ac-beb4-dfc8dedc5355)
 
 <br>
 
