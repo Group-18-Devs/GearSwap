@@ -116,14 +116,16 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
   - Option to edit profile details or view own listings and rentals.
 
 ## Wireframes
-
-[Add picture of your hand sketched wireframes in this section] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![Figma WireFrame](https://github.com/Group-18-Devs/GearSwap/assets/106501057/9048f41c-3e12-45ca-a673-b4556d22a293)
 
 <br>
 
 <br>
 
 ### [BONUS] Digital Wireframes & Mockups
+![Figma WireFrame](https://github.com/Group-18-Devs/GearSwap/assets/106501057/9048f41c-3e12-45ca-a673-b4556d22a293)
+
+
 
 ### [BONUS] Interactive Prototype
 
