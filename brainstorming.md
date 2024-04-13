@@ -42,7 +42,7 @@ Mobile App Dev - GearSwap
 13. Recipe Finder: DishDiscover
 
 ## Top 3 New App Ideas
-1. GearSwap
+1. **GearSwap** (Final choice)
 2. Lastest Launch
 3. FindAFix
 
