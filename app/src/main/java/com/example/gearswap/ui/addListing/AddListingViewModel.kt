@@ -1,13 +1,13 @@
-package com.example.gearswap.ui.notifications
+package com.example.gearswap.ui.addListing
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class AddListingViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is Add Listing Fragment"
     }
     val text: LiveData<String> = _text
 }
