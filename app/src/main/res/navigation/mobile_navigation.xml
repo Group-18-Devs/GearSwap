@@ -6,10 +6,10 @@
     app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home2"
-        android:name="com.example.gearswap.ui.home.HomeFragment"
-        android:label="@string/title_home2"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_home"
+        android:name="com.example.gearswap.ui.home.GearItemListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_gear_item_list" />
 
     <fragment
         android:id="@+id/navigation_add_listing"
@@ -22,9 +22,5 @@
         android:name="com.example.gearswap.ui.myProfile.MyProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_my_profile" />
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.gearswap.ui.home.GearItemListFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/gear_item_list" />
+
 </navigation>
