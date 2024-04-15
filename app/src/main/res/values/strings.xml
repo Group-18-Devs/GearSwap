@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GearSwap</string>
-    <string name="title_home">Gear</string>
+    <string name="title_home2">Gear2</string>
     <string name="title_post_listing">Add Listing</string>
     <string name="title_profile">My Profile</string>
+    <string name="title_home">Gear</string>
 </resources>
