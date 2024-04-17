@@ -3,6 +3,7 @@ package com.example.gearswap.ui.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -18,6 +19,16 @@ import java.util.Locale
 class GearItemListRecyclerViewAdapter(
     private val values: List<PlaceholderItem>
 ) : RecyclerView.Adapter<GearItemListRecyclerViewAdapter.ViewHolder>() {
+
+    inner class ViewHolder(binding: GearItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        val titleView: TextView = binding.gearTitle
+        val priceView: TextView = binding.gearPrice
+        val descriptionView: TextView = binding.gearDescription
+        val imageView: ImageView = binding.gearImage
+        val ratingView: RatingBar = binding.gearRating
+
+    }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -43,6 +54,7 @@ class GearItemListRecyclerViewAdapter(
             )
         }"
         holder.descriptionView.text = item.description
+        holder.ratingView.rating = item.rating
         Glide.with(holder.imageView.context)
             .load(item.imageUrl)
             .placeholder(R.drawable.placeholder300)
@@ -52,12 +64,4 @@ class GearItemListRecyclerViewAdapter(
 
     override fun getItemCount(): Int = values.size
 
-    inner class ViewHolder(binding: GearItemBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        val titleView: TextView = binding.gearTitle
-        val priceView: TextView = binding.gearPrice
-        val descriptionView: TextView = binding.gearDescription
-        val imageView: ImageView = binding.gearImage
-
-    }
 }

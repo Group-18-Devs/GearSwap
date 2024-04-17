@@ -12,7 +12,7 @@ import com.example.gearswap.databinding.FragmentGearItemListBinding
 import com.example.gearswap.placeholder.PlaceholderContent
 
 class GearItemListFragment : Fragment() {
-
+//TODO: Add tab layout for different sport items
     private var columnCount = 1
     private var _binding: FragmentGearItemListBinding? = null
     private val binding get() = _binding!!

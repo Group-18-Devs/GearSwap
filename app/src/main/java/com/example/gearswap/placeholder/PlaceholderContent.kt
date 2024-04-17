@@ -40,6 +40,7 @@ object PlaceholderContent {
             title = "Gear $position",
             description = "Description for Gear $position",
             price = position * 5.0,
+            rating = (1..5).random().toFloat(),
             //fixme: Get Network Permission and Replace with a real image URL
             imageUrl = "https://example.com/images/gear$position.jpg"
         )
@@ -53,6 +54,7 @@ object PlaceholderContent {
         val title: String,
         val description: String,
         val price: Double,
+        val rating: Float,
         val imageUrl: String
     ) {
         /**
@@ -66,7 +68,7 @@ object PlaceholderContent {
                     "%.2f",
                     price
                 )
-            }, Description: $description, Image URL: $imageUrl"
+            },Rating: $rating, Description: $description, Image URL: $imageUrl"
         }
     }
 }

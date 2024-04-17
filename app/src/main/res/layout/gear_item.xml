@@ -8,44 +8,70 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <ImageView
             android:id="@+id/gear_image"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="200dp"
-            android:contentDescription="TODO"
             android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/gear_title"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/gear_image"
+            app:layout_constraintStart_toStartOf="parent"
             tools:text="Mountain Bike" />
+
+        <RatingBar
+            android:id="@+id/gear_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            app:layout_constraintTop_toTopOf="@id/gear_title"
+            app:layout_constraintBottom_toBottomOf="@id/gear_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:rating="4.5" />
 
         <TextView
             android:id="@+id/gear_description"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingTop="4dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:paddingTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/gear_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             tools:text="Excellent condition, perfect for trail rides." />
 
         <TextView
             android:id="@+id/gear_price"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingTop="4dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:paddingTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/gear_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             tools:text="$15.00 per day" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
+
+
 
