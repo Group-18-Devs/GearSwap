@@ -8,16 +8,17 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <ImageView
             android:id="@+id/gear_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@string/listing_item_image_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="TODO"
             android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/avatars" />
 
@@ -25,33 +26,26 @@
             android:id="@+id/gear_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/gear_image"
-            android:layout_marginStart="16dp"
+            android:paddingTop="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:text="@string/gear_title"
             tools:text="Mountain Bike" />
 
         <TextView
             android:id="@+id/gear_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gear_title"
-            android:layout_toEndOf="@id/gear_image"
-            android:layout_marginStart="16dp"
+            android:paddingTop="4dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:text="@string/gear_description"
             tools:text="Excellent condition, perfect for trail rides." />
 
         <TextView
             android:id="@+id/gear_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gear_description"
-            android:layout_toEndOf="@id/gear_image"
-            android:layout_marginStart="16dp"
+            android:paddingTop="4dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:text="@string/gear_price_format"
             tools:text="$15.00 per day" />
 
-    </RelativeLayout>
+    </LinearLayout>
 </androidx.cardview.widget.CardView>
+
