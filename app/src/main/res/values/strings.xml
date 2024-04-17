@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">GearSwap</string>
-    <string name="title_home2">Gear2</string>
     <string name="title_post_listing">Add Listing</string>
     <string name="title_profile">My Profile</string>
     <string name="title_home">Gear</string>
     <string name="gear_search_box_hint">Search gear</string>
+    <!--Home Screen / Listing Feed Text-->
+    <string name="gear_title">Gear Title</string>
+    <string name="gear_description">Short description of the gear…</string>
+    <string name="gear_price_format">$%1$.2f per day</string>
+    <string name="listing_item_image_description">Listing Item Image</string>
+    <string name="item_price_string">$%1$s</string>
+
 </resources>

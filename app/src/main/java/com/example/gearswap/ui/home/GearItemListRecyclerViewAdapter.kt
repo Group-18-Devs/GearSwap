@@ -1,16 +1,19 @@
 package com.example.gearswap.ui.home
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
-
-import com.example.gearswap.placeholder.PlaceholderContent.PlaceholderItem
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.gearswap.R
 import com.example.gearswap.databinding.GearItemBinding
+import com.example.gearswap.placeholder.PlaceholderContent.PlaceholderItem
+import java.util.Locale
 
 /**
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].
- * TODO: Replace the implementation with code for your data type.
+ * Each item displays a title, price, description, and an image.
  */
 class GearItemListRecyclerViewAdapter(
     private val values: List<PlaceholderItem>
@@ -20,7 +23,6 @@ class GearItemListRecyclerViewAdapter(
         parent: ViewGroup,
         viewType: Int
     ): ViewHolder {
-
         return ViewHolder(
             GearItemBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -28,25 +30,34 @@ class GearItemListRecyclerViewAdapter(
                 false
             )
         )
-
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
-        holder.idView.text = item.id
-        holder.contentView.text = item.content
+        holder.titleView.text = item.title
+        //Fixme: format price for appropriate locale using string resources
+        holder.priceView.text = "$${
+            String.format(
+                Locale.US, "%.2f",
+                item.price
+            )
+        }"
+        holder.descriptionView.text = item.description
+        Glide.with(holder.imageView.context)
+            .load(item.imageUrl)
+            .placeholder(R.drawable.placeholder300)
+            .into(holder.imageView)
+
     }
 
     override fun getItemCount(): Int = values.size
 
     inner class ViewHolder(binding: GearItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        val idView: TextView = binding.itemNumber
-        val contentView: TextView = binding.content
+        val titleView: TextView = binding.gearTitle
+        val priceView: TextView = binding.gearPrice
+        val descriptionView: TextView = binding.gearDescription
+        val imageView: ImageView = binding.gearImage
 
-        override fun toString(): String {
-            return super.toString() + " '" + contentView.text + "'"
-        }
     }
-
 }
