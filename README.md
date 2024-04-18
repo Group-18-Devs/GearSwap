@@ -133,11 +133,10 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
 
 # Milestone 2 - Build Sprint 1 (Unit 8)
 
-## GitHub Project board
+## GitHub Project Board
 
-[Add screenshot of your Project Board with three milestones visible in
-this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/a4c78a0f-f28c-419e-aeea-0eed1ffceec4" width=40%>
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/9882487a-3435-414f-aabd-dd1ab9e7be2d" width=40%>
 
 ## Issue cards
 
