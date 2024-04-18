@@ -8,16 +8,17 @@
     android:paddingTop="?attr/actionBarSize">
     <ImageView
         android:id="@+id/profilePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="141dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="142dp"
+        android:src="@drawable/circle_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
+
         android:contentDescription="@string/upload_profile_picture" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -35,27 +36,34 @@
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="406dp"
-        android:layout_height="404dp"
+        android:layout_width="409dp"
+        android:layout_height="368dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navViewTwo"
         app:navGraph="@navigation/mobile_navigation" />
-
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navViewTwo"
-        android:layout_width="406dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="410dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profilePicture"
-        app:menu="@menu/nav_view_menu_profile"/>
+        app:menu="@menu/nav_view_menu_profile" />
+
+    <Button
+        android:id="@+id/profilePicUploadbtn"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="98dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
