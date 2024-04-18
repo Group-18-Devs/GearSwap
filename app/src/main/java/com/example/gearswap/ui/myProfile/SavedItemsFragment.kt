@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.gearswap.R
 
-class SavedFragment : Fragment() {
+class SavedItemsFragment : Fragment() {
 
     companion object {
-        fun newInstance() = SavedFragment()
+        fun newInstance() = SavedItemsFragment()
     }
 
 
@@ -25,5 +25,7 @@ class SavedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         return inflater.inflate(R.layout.fragment_saved, container, false)
+        //set textview
+
     }
 }
