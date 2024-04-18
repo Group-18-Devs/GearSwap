@@ -29,8 +29,6 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/mobile_navigation" />
 
     <ImageView
@@ -44,16 +42,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/upload_profile_picture" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navViewProfilePic"
-        android:layout_width="409dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="4dp"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navViewTwo"
+        android:layout_width="406dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+        app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+        app:menu="@menu/nav_view_menu_profile"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

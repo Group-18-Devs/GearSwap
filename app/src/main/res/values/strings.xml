@@ -3,4 +3,12 @@
     <string name="title_home">Gear</string>
     <string name="title_post_listing">Add Listing</string>
     <string name="title_profile">My Profile</string>
+    <string name="home_feed">Home/Feed</string>
+    <string name="post_listings">Post Listings</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="saved">Saved</string>
+    <string name="transactions">Transactions</string>
+    <string name="reviews">reviews</string>
+    <string name="upload_profile_picture">upload profile picture</string>
 </resources>
