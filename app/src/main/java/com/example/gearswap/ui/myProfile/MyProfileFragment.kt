@@ -23,7 +23,7 @@ class MyProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val myProfileViewModel =
-            ViewModelProvider(this).get(MyProfileViewModel::class.java)
+            ViewModelProvider(this)[MyProfileViewModel::class.java]
 
         _binding = FragmentMyProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
