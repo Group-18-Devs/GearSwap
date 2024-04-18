@@ -2,19 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/account"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/baseline_attach_money_24"
         android:title="@string/account" />
 
     <item
         android:id="@+id/saved"
+        android:icon="@drawable/baseline_save_24"
         android:title="@string/saved" />
 
     <item
         android:id="@+id/transactions"
+        android:icon="@drawable/baseline_attach_money_24"
         android:title="@string/transactions" />
 
     <item
         android:id="@+id/reviewTab"
+        android:icon="@drawable/baseline_reviews_24"
         android:title="@string/reviews" />
 
 
