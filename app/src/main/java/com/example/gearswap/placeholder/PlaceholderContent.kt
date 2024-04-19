@@ -71,7 +71,7 @@ object PlaceholderContent {
             "Men's size 10, cloud foam, extremely comfortable.",
             120.0,
             "https://example.com/images/gear4.jpg",
-            4.3f,
+            1.0f,
             listOf("Running"),
             "DannyPhantom654"
         ),
@@ -121,7 +121,7 @@ object PlaceholderContent {
             "Eco-friendly, non-slip, with alignment markers.",
             115.0,
             "https://example.com/images/gear9.jpg",
-            4.9f,
+            1.0f,
             listOf("Yoga"),
             "IvyGreen123"
         ),
@@ -131,7 +131,7 @@ object PlaceholderContent {
             "Heavy-duty, durable, includes hanging chains.",
             90.0,
             "https://example.com/images/gear10.jpg",
-            4.5f,
+            2.3f,
             listOf("Boxing"),
             "JaneDoe456"
         ),
@@ -141,7 +141,7 @@ object PlaceholderContent {
             "Official size, synthetic leather, excellent grip.",
             35.0,
             "https://example.com/images/gear11.jpg",
-            4.6f,
+            3.7f,
             listOf("Football"),
             "JohnDoe123"
         ),
