@@ -66,6 +66,8 @@
 
     <ImageView
         android:id="@+id/imageViewAddPhoto"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:contentDescription="@string/add_photo"
