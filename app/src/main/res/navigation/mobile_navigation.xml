@@ -9,7 +9,16 @@
         android:id="@+id/navigation_home"
         android:name="com.example.gearswap.ui.home.GearItemListFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_gear_item_list" />
+        tools:layout="@layout/fragment_gear_item_list" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_gear_item_detail"
+            app:destination="@id/navigation_gear_item_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_gear_item_detail"
+        android:name="com.example.gearswap.ui.home.GearItemDetailFragment"
+        android:label="@string/title_gear_item_detail"
+        tools:layout="@layout/fragment_gear_item_detail" />
 
     <fragment
         android:id="@+id/navigation_add_listing"

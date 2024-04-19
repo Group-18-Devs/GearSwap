@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gearswap.R
@@ -35,6 +36,7 @@ class GearItemListRecyclerViewAdapter(
                 if (pos != RecyclerView.NO_POSITION) {
                     val item = values[pos]
                     Toast.makeText(v?.context, item.title + " clicked", Toast.LENGTH_SHORT).show()
+                    v.findNavController().navigate(R.id.action_navigation_home_to_navigation_gear_item_detail)
                 }
 
 
