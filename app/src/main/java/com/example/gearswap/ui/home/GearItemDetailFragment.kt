@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
+import com.example.gearswap.R
 import com.example.gearswap.databinding.FragmentGearItemDetailBinding
 import com.example.gearswap.placeholder.PlaceholderContent
 
@@ -27,7 +29,6 @@ class GearItemDetailFragment : Fragment() {
         super.onCreate(savedInstanceState)
         arguments?.let {
             gearItemId = args.fromBundle(it).gearItemId
-
         }
     }
 
@@ -43,9 +44,16 @@ class GearItemDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        PlaceholderContent.ITEMS.find { it.id == gearItemId.toString() }?.let {
-        binding.textView.text = "Gear Item Detail Fragment Item ID: $gearItemId/n" + it.title
-    }
+        PlaceholderContent.ITEMS.find { it.id == gearItemId.toString() }?.let { item ->
+            val imageView = binding.imageViewGearPhoto
+            Glide.with(this).load(item.imageUrl).placeholder(R.drawable.placeholder300)
+                .into(imageView)
+            binding.textViewGearTitle.text = item.title
+            binding.textViewGearDescription.text = item.description
+            binding.textViewGearPrice.text = item.price.toString()
+            binding.ratingBarGear.rating = item.rating
+
+        }
     }
 
     companion object {
