@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gearswap.R
@@ -28,8 +29,24 @@ class GearItemListRecyclerViewAdapter(
         val imageView: ImageView = binding.gearImage
         val ratingView: RatingBar = binding.gearRating
 
+        init {
+            binding.root.setOnClickListener { v ->
+                val pos = bindingAdapterPosition
+                if (pos != RecyclerView.NO_POSITION) {
+                    val item = values[pos]
+                    Toast.makeText(v?.context, item.title + " clicked", Toast.LENGTH_SHORT).show()
+                }
+
+
+            }
+        }
     }
 
+    /*
+    fun onClick(v: View?){
+        Toast.makeText(v?.context, "Hello there", Toast.LENGTH_SHORT).show()
+    }
+*/
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
