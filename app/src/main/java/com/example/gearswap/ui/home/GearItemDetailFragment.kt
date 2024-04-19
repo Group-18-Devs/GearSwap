@@ -1,16 +1,16 @@
 package com.example.gearswap.ui.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.gearswap.R
+import androidx.fragment.app.Fragment
+import com.example.gearswap.databinding.FragmentGearItemDetailBinding
+import com.example.gearswap.placeholder.PlaceholderContent
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+
+private val args = GearItemDetailFragmentArgs
 
 /**
  * A simple [Fragment] subclass.
@@ -18,24 +18,34 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class GearItemDetailFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private var gearItemId: Int? = null
+    private var _binding: FragmentGearItemDetailBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            gearItemId = args.fromBundle(it).gearItemId
+
         }
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gear_item_detail, container, false)
+        Log.d("GearItemDetail", "Gear Item ID - fragment: $gearItemId")
+        _binding = FragmentGearItemDetailBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        PlaceholderContent.ITEMS.find { it.id == gearItemId.toString() }?.let {
+        binding.textView.text = "Gear Item Detail Fragment Item ID: $gearItemId/n" + it.title
+    }
     }
 
     companion object {
@@ -43,18 +53,12 @@ class GearItemDetailFragment : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
+         * @param gearItemId Int, Gear Item Id.
          * @return A new instance of fragment GearItemDetailFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            GearItemDetailFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        fun newInstance(gearItemId: Int) = GearItemDetailFragment()
+
     }
 }

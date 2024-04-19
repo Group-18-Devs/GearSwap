@@ -1,18 +1,19 @@
 package com.example.gearswap.ui.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.gearswap.databinding.FragmentGearItemListBinding
 import com.example.gearswap.placeholder.PlaceholderContent
 
 class GearItemListFragment : Fragment() {
-//TODO: Add tab layout for different sport items
+    //TODO: Add tab layout for different sport items
     private var columnCount = 1
     private var _binding: FragmentGearItemListBinding? = null
     private val binding get() = _binding!!
@@ -25,23 +26,25 @@ class GearItemListFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
         _binding = FragmentGearItemListBinding.inflate(inflater, container, false)
         val view = binding.root
-
         setupRecyclerView()
         return view
     }
+
 
     private fun setupRecyclerView() {
         binding.gearItemsList.layoutManager = when {
             columnCount <= 1 -> LinearLayoutManager(context)
             else -> GridLayoutManager(context, columnCount)
         }
-        binding.gearItemsList.adapter = GearItemListRecyclerViewAdapter(
-            PlaceholderContent.ITEMS)
+        binding.gearItemsList.adapter =
+            GearItemListRecyclerViewAdapter(PlaceholderContent.ITEMS, onItemClick = { itemId ->
+                findNavController().navigate(GearItemListFragmentDirections.showItemDetail(itemId))
+            })
+
     }
 
     override fun onDestroyView() {
