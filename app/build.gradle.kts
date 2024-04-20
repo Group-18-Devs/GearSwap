@@ -56,4 +56,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.github.glide)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.viewpager2.viewpager2)
 }

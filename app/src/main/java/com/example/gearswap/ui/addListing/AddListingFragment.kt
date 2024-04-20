@@ -21,32 +21,34 @@ class AddListingFragment : Fragment() {
     val REQUEST_GALLERY_IMAGE = 110
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
+    private val binding
+        get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View {
         _binding = FragmentAddListingBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        binding.imageViewAddPhoto.setOnClickListener {
-            showImagePickerOptions()
-        }
+        binding.imageViewAddPhoto.setOnClickListener { showImagePickerOptions() }
         return root
     }
-    //TODO: Declare camera and storage permissions in manifest
+    // TODO: Declare camera and storage permissions in manifest
     private fun showImagePickerOptions() {
         val items = arrayOf("Take Photo", "Choose from Gallery", "Cancel")
         AlertDialog.Builder(requireContext())
-            .setTitle("Add Photo")
-            .setItems(items) { dialog, which ->
-                when (items[which]) {
-                    "Take Photo" -> takePhoto()
-                    "Choose from Gallery" -> chooseFromGallery()
-                    "Cancel" -> dialog.dismiss()
+                .setTitle("Add Photo")
+                .setItems(items) { dialog, which ->
+                    when (items[which]) {
+                        "Take Photo" -> takePhoto()
+                        "Choose from Gallery" -> chooseFromGallery()
+                        "Cancel" -> dialog.dismiss()
+                    }
                 }
-            }.show()
+                .show()
     }
-//fixme: This relies on deprecated methods refactor with new methods
+    // fixme: This relies on deprecated methods refactor with new methods
     private fun takePhoto() {
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         try {
@@ -79,8 +81,6 @@ class AddListingFragment : Fragment() {
             }
         }
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()
