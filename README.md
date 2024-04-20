@@ -146,7 +146,7 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
 ## Issues worked on this sprint
 
 - List the issues you completed this sprint
-- [Add giphy that shows current build progress for Milestone 2. Note: We will be looking for progression of work between Milestone 2 and 3. Make sure your giphys are not duplicated and clearly show the change from Sprint 1 to 2.]
+![Sprint1-Demo](https://github.com/Group-18-Devs/GearSwap/assets/106501057/be882864-802c-4e55-a1d7-d6587a81b515)
 
 <br>
 
