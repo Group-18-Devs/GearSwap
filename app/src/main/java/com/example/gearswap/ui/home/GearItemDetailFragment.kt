@@ -28,7 +28,8 @@ class GearItemDetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            gearItemId = args.fromBundle(it).gearItemId
+            // +1 to get the correct index item ids starts at 1
+            gearItemId = args.fromBundle(it).gearItemId + 1
         }
     }
 
