@@ -3,15 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gear_items_list_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Search Bar EditText -->
     <EditText
-        android:id="@+id/search_bar"
+        android:id="@+id/save_search_bar"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -28,15 +26,14 @@
 
     <!-- RecyclerView for listing items -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/gear_items_list"
+        android:id="@+id/saved_items_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layoutManager="LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/search_bar"
-        tools:context=".ui.home.GearItemListFragment"
-        tools:listitem="@layout/gear_item" />
+        tools:context=".ui.myProfile.saved.SavedItemsListFragment"
+        tools:listitem="@layout/saved_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
