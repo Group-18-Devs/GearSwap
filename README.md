@@ -134,24 +134,28 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
 # Milestone 2 - Build Sprint 1 (Unit 8)
 
 ## GitHub Project Board
+### Lab 8:
 
-<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/a4c78a0f-f28c-419e-aeea-0eed1ffceec4" width=40%>
-<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/9882487a-3435-414f-aabd-dd1ab9e7be2d" width=40%>
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/a4c78a0f-f28c-419e-aeea-0eed1ffceec4" alt="Project Board Lab8" width=40%>
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/9882487a-3435-414f-aabd-dd1ab9e7be2d" alt="Milestones" width=40%>
 
 ## Issue cards
+### Sprint 1 Issues:
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/fb1c692a-2a75-4019-98d8-10f84a399167" alt="Sprint 1 Issues" width=600>
 
-- [Add screenshot of your Project Board with the issues that you've been working on for this unit's milestone] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+### Sprint 2 Board
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/13a9a7c3-b08f-4d65-917f-0b258373aa64" alt="Sprint 2 Board" width=600>
 
-![gearswapweek1todo](https://github.com/Group-18-Devs/GearSwap/assets/106501057/fb1c692a-2a75-4019-98d8-10f84a399167)
-|![GearSwapboard9](https://github.com/Group-18-Devs/GearSwap/assets/106501057/13a9a7c3-b08f-4d65-917f-0b258373aa64)
-![Gearswaptodosweek9](https://github.com/Group-18-Devs/GearSwap/assets/106501057/eeec00b9-5114-400c-9455-f6aa9ba5d95f)
+### Sprint 2 Issues 
+![Gearswaptodosweek9](https://github.com/Group-18-Devs/GearSwap/assets/106501057/1c318a11-8561-4070-8f72-ac1405864d2f)
 
 
-- [Add screenshot of your Project Board with the issues that you're working on in the **NEXT sprint**. It should include issues for next unit with assigned owners.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ## Issues worked on this sprint
 
-- List the issues you completed this sprint
+- #1 Build Login Screen
+- #2 Build Home Screen
+
 ![Sprint1-Demo](https://github.com/Group-18-Devs/GearSwap/assets/106501057/be882864-802c-4e55-a1d7-d6587a81b515)
 
 <br>
