@@ -40,7 +40,7 @@ object PlaceholderContent {
             "Climbing Shoes - Scarpa Velocity",
             "Size 42, great for bouldering and climbing gyms.",
             85.0,
-            "https://example.com/images/gear1.jpg",
+            "https://assets.adidas.com/images/w_600,f_auto,q_auto/4cb7f45b21a64881a2ccad1d017daec3_9366/Racer_TR21_Shoes_Black_GZ8184_01_standard.jpg",
             4.2f,
             listOf("Climbing"),
             "AliceSmith789"
@@ -70,7 +70,7 @@ object PlaceholderContent {
             "Running Shoes - Adidas UltraBoost",
             "Men's size 10, cloud foam, extremely comfortable.",
             120.0,
-            "https://example.com/images/gear4.jpg",
+            "https://www.adidas.com/us/ultraboost-1.0-shoes/HQ4202.html",
             1.0f,
             listOf("Running"),
             "DannyPhantom654"
