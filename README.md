@@ -141,6 +141,12 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
 ## Issue cards
 
 - [Add screenshot of your Project Board with the issues that you've been working on for this unit's milestone] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+![gearswapweek1todo](https://github.com/Group-18-Devs/GearSwap/assets/106501057/fb1c692a-2a75-4019-98d8-10f84a399167)
+|![GearSwapboard9](https://github.com/Group-18-Devs/GearSwap/assets/106501057/13a9a7c3-b08f-4d65-917f-0b258373aa64)
+![Gearswaptodosweek9](https://github.com/Group-18-Devs/GearSwap/assets/106501057/eeec00b9-5114-400c-9455-f6aa9ba5d95f)
+
+
 - [Add screenshot of your Project Board with the issues that you're working on in the **NEXT sprint**. It should include issues for next unit with assigned owners.] <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ## Issues worked on this sprint
