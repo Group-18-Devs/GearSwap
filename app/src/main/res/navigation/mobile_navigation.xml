@@ -37,4 +37,5 @@
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_my_profile" />
 
+
 </navigation>
