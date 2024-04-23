@@ -40,5 +40,11 @@
         android:id="@+id/loginFragment"
         android:name="com.example.gearswap.ui.login.LoginFragment"
         android:label="@string/fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/login_to_homescreen"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>

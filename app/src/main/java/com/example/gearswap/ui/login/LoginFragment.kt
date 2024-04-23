@@ -95,7 +95,7 @@ class LoginFragment : Fragment() {
             loginViewModel.login(usernameEditText.text.toString(), passwordEditText.text.toString())
         }
 
-        binding.guestLogin.setOnClickListener { findNavController().navigate(R.id.navigation_home) }
+        binding.guestLogin.setOnClickListener { findNavController().navigate(R.id.login_to_homescreen) }
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {
@@ -103,7 +103,7 @@ class LoginFragment : Fragment() {
         // TODO : initiate successful logged in experience
         val appContext = context?.applicationContext ?: return
         Toast.makeText(appContext, welcome, Toast.LENGTH_LONG).show()
-        findNavController().navigate(R.id.navigation_home)
+        findNavController().navigate(R.id.login_to_homescreen)
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
