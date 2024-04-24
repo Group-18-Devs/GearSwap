@@ -16,7 +16,8 @@
         android:contentDescription="@string/profile_picture"
         android:src="@drawable/ic_add_a_photo_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/gray" />
 
     <ImageView
         android:id="@+id/profilePicture"
@@ -26,14 +27,16 @@
         android:layout_marginTop="4dp"
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/gray"
+        android:contentDescription="@string/profile_picture" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:background="#C5CAE9"
+        android:background="#D3D3D3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +60,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="132dp"
-        android:text="James Sportsman"
+        android:text="@string/james_sportsman"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#070707"
