@@ -51,7 +51,7 @@ class GearItemDetailFragment : Fragment() {
             Glide.with(this).load(item.imageUrl).placeholder(R.drawable.placeholder300)
                 .into(imageView)
             binding.textViewGearTitle.text = item.title
-            binding.textViewGearDescription.text = item.description
+            binding.textViewGearDescription.text = item.shortDescription
             binding.textViewGearPrice.text = getString(
                 R.string.item_price_string, NumberFormat.getCurrencyInstance().format(item.price)
             )

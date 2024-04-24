@@ -18,7 +18,7 @@ object PlaceholderContent {
     data class PlaceholderItem(
         val id: String,
         val title: String,
-        val description: String,
+        val shortDescription: String,
         val price: Double,
         val imageUrl: String,
         val rating: Float,
@@ -28,7 +28,7 @@ object PlaceholderContent {
         override fun toString(): String {
             return "ID: $id, Title: $title, Price: \$${
                 String.format(Locale.US, "%.2f", price)
-            }, Rating: $rating, Description: $description, Image URL: $imageUrl, Sports: ${sports.joinToString()}, Author: $author"
+            }, Rating: $rating, Description: $shortDescription, Image URL: $imageUrl, Sports: ${sports.joinToString()}, Author: $author"
         }
     }
     /**
