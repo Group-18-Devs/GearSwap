@@ -2,6 +2,7 @@ package com.example.gearswap
 
 import android.os.Bundle
 import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -52,4 +53,17 @@ class MainActivity : AppCompatActivity() {
         // This method is called when the up button is pressed. Just return the NavController's navigateUp method.
         return findNavController(R.id.nav_host_fragment_activity_main).navigateUp() || super.onSupportNavigateUp()
     }
+
+    val callback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            if (findNavController(R.id.nav_host_fragment_activity_main).currentDestination?.id == R.id.navigation_home) {
+                finish()
+            } else {
+                findNavController(R.id.nav_host_fragment_activity_main).navigateUp()
+            }
+        }
+
+    }
+
+
 }
