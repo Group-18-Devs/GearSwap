@@ -23,8 +23,10 @@ object PlaceholderContent {
         val imageUrl: String,
         val rating: Float,
         val sports: List<String>,
-        val author: String
-    ) {
+        val author: String,
+        val longDescription: String = "TODO: Replace with a real description",
+
+        ) {
         override fun toString(): String {
             return "ID: $id, Title: $title, Price: \$${
                 String.format(Locale.US, "%.2f", price)
@@ -43,7 +45,18 @@ object PlaceholderContent {
             "https://climbinggearreviews.com/wp-content/uploads/2020/03/scarpa-velocity-climbing-shoe.jpg?w=1000",
             4.2f,
             listOf("Climbing"),
-            "AliceSmith789"
+            "AliceSmith789",
+            "DESCRIPTION\n" +
+                    "Brand: La Sportiva\n" +
+                    "Main Color: Gray\n" +
+                    "Sport: Climbing\n" +
+                    "Type: Shoes\n" +
+                    "Custom Bundle: No\n" +
+                    "Country/Region of Manufacture: China\n" +
+                    "US Size: 12\n" +
+                    "Width: Medium (D, M)\n" +
+                    "\n" +
+                    "Shoes are in excellent condition with a bit of dust clinging to them."
         ),
         PlaceholderItem(
             "2",

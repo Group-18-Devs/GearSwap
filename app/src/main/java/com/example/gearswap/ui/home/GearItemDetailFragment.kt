@@ -52,6 +52,7 @@ class GearItemDetailFragment : Fragment() {
                 .into(imageView)
             binding.textViewGearTitle.text = item.title
             binding.textViewGearDescription.text = item.shortDescription
+            binding.textViewGearDescription2.text = item.longDescription
             binding.textViewGearPrice.text = getString(
                 R.string.item_price_string, NumberFormat.getCurrencyInstance().format(item.price)
             )
