@@ -89,4 +89,26 @@ US Size: 12
 Width: Medium (D, M)
 
 Shoes are in excellent condition with a bit of dust clinging to them." />
+
+    <FrameLayout
+        android:id="@+id/stickyBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/buyNowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorOnSecondary"
+            android:text="Rent Now"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
