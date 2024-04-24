@@ -1,5 +1,6 @@
 package com.example.gearswap.ui.home
 
+import android.icu.text.NumberFormat
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -48,11 +49,9 @@ class GearItemListRecyclerViewAdapter(
         val item = values[position]
         holder.titleView.text = item.title
         //Fixme: format price for appropriate locale using string resources
-        holder.priceView.text = "$${
-            String.format(
-                Locale.US, "%.2f", item.price
-            )
-        }"
+
+        holder.priceView.text = holder.itemView.context.getString(R.string.item_price_string,NumberFormat.getCurrencyInstance().format(item.price))
+
         holder.descriptionView.text = item.description
         holder.ratingView.rating = item.rating
         Glide.with(holder.imageView.context).load(item.imageUrl)

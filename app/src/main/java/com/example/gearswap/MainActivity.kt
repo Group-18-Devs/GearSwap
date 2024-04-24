@@ -40,6 +40,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.loginFragment -> {
                     navView.visibility = View.GONE
                 }
+                R.id.navigation_gear_item_detail -> {
+                    navView.visibility = View.GONE
+                }
 
                 else -> {
                     navView.visibility = View.VISIBLE

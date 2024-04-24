@@ -1,5 +1,6 @@
 package com.example.gearswap.ui.home
 
+import android.icu.text.NumberFormat
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -51,7 +52,9 @@ class GearItemDetailFragment : Fragment() {
                 .into(imageView)
             binding.textViewGearTitle.text = item.title
             binding.textViewGearDescription.text = item.description
-            binding.textViewGearPrice.text = item.price.toString()
+            binding.textViewGearPrice.text = getString(
+                R.string.item_price_string, NumberFormat.getCurrencyInstance().format(item.price)
+            )
             binding.ratingBarGear.rating = item.rating
 
         }
