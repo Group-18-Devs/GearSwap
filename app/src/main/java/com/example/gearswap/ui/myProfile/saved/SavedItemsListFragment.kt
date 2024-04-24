@@ -9,6 +9,7 @@ import com.example.gearswap.R
 
 class SavedItemsListFragment : Fragment() {
 
+
     companion object {
         fun newInstance() = SavedItemsListFragment()
     }
@@ -16,6 +17,7 @@ class SavedItemsListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
     }
 
