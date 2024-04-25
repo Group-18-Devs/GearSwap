@@ -27,10 +27,10 @@ class TransactionsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Set placeholder data
-        binding.transactionId.text = getString(R.string.placeholder_transaction_id, "TX1234567890")
-        binding.itemDetails.text = getString(R.string.placeholder_item_details, "Special Gear", "2", "$100.00")
-        binding.dateOfTransaction.text = getString(R.string.placeholder_date_of_transaction, getCurrentDate())
-        binding.confirmationMessage.text = getString(R.string.placeholder_confirmation_message)
+//        binding.transactionId.text = getString(R.string.placeholder_transaction_id, "TX1234567890")
+//        binding.itemDetails.text = getString(R.string.placeholder_item_details, "Special Gear", "2", "$100.00")
+//        binding.dateOfTransaction.text = getString(R.string.placeholder_date_of_transaction, getCurrentDate())
+//        binding.confirmationMessage.text = getString(R.string.placeholder_confirmation_message)
 
         // Set up button click listeners
         binding.viewDetailsButton.setOnClickListener {

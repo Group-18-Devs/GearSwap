@@ -10,7 +10,7 @@ class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun createFragment(position: Int): Fragment {
         return when (position) {
 //          TODO: Add additional fragments
-            0 -> AccountFragment()
+            0 -> MyProfileFragment()
             1 -> SavedItemsFragment()
             2 -> TransactionsFragment()
             else -> ReviewsFragment()
