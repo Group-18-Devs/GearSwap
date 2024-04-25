@@ -53,6 +53,11 @@ class GearItemDetailFragment : Fragment() {
             binding.textViewGearDescription.text = item.description
             binding.textViewGearPrice.text = item.price.toString()
             binding.ratingBarGear.rating = item.rating
+            binding.buyNowButton.setOnClickListener {
+                // navigate to checkout fragment
+
+            }
+
 
         }
     }
