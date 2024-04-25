@@ -13,7 +13,6 @@
 
     <EditText
         android:id="@+id/username"
-        style="@style/StyledEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -27,7 +26,6 @@
 
     <EditText
         android:id="@+id/password"
-        style="@style/StyledEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
