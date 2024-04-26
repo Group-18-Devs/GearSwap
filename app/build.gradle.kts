@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("androidx.navigation.safeargs.kotlin")
-
 }
 
 android {
@@ -58,5 +57,6 @@ dependencies {
     implementation(libs.androidx.viewpager2.viewpager2)
     implementation(libs.androidx.recyclerview)
     implementation (libs.github.glide)
+    implementation(libs.stripe.android)
 
 }
