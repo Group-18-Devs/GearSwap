@@ -45,4 +45,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="fragment_login">GearSwap Login</string>
     <string name="browse_as_guest_button">Browse as Guest</string>
+    <string name="login_with_apple">login with apple</string>
+    <string name="login_with_google">login with google</string>
+    <string name="login_with_facebook">login with facebook</string>
 </resources>

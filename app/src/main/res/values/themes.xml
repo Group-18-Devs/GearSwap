@@ -25,4 +25,11 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:fontFamily">@font/bebas_neue</item>
     </style>
+
+    <!-- StyledButton style added below -->
+    <style name="StyledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="colorPrimaryVariant">#181829</item>
+
+    </style>
 </resources>
