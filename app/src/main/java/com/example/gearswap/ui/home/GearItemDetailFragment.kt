@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.gearswap.R
 import com.example.gearswap.databinding.FragmentGearItemDetailBinding
 import com.example.gearswap.placeholder.PlaceholderContent
+import kotlin.random.Random
 
 
 private val args = GearItemDetailFragmentArgs
@@ -24,6 +25,7 @@ private val args = GearItemDetailFragmentArgs
 class GearItemDetailFragment : Fragment() {
 
     private var gearItemId: Int? = null
+
     //TODO:Refactor viewBinding
     private var _binding: FragmentGearItemDetailBinding? = null
     private val binding get() = _binding!!
@@ -59,12 +61,55 @@ class GearItemDetailFragment : Fragment() {
                 R.string.item_price_string, NumberFormat.getCurrencyInstance().format(item.price)
             )
             binding.ratingBarGear.rating = item.rating
+
+            //TODO: Get random profile
+            Glide.with(this)
+                .load(getProfilePicture(item.author))
+//                .centerCrop()
+                .circleCrop().placeholder(R.drawable.placeholder300).into(binding.profileImage)
+
+            binding.textViewUserName.text = item.author
+            binding.textViewUserLocation.text = getProfileLocation()
+            binding.textViewUserRating.text =
+                "${(Random.nextInt(10, 51) / 10.0)}   (${Random.nextInt(50, 990)})"
+
             binding.buyNowButton.setOnClickListener {
                 findNavController().navigate(R.id.show_checkout)
             }
 
+
         }
     }
+
+    private fun getProfilePicture(author : String): String {
+        return when (author) {
+            "AliceSmith789" -> "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "BobWhite202" -> "https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=600"
+            "CharlieBrown321" -> "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "DannyPhantom654" -> "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "EvaFox777" -> "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "FredAstaire888" -> "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "GraceHopper999" -> "https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1    "
+            "JaneDoe456" -> "https://images.pexels.com/photos/678783/pexels-photo-678783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "JohnDoe123" -> "https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+
+
+            else -> "" //TODO:Placeholder Vector
+        }
+    }
+
+    private fun getProfileLocation(): String {
+        return when (Random.nextInt(1, 5)) {
+            1 -> "San Francisco, CA"
+            2 -> "New York, NY"
+            3 -> "Los Angeles, CA"
+            4 -> "Chicago, IL"
+            5 -> "Houston, TX"
+            else -> "Unknown"
+        }
+
+    }
+
 
     companion object {
         /**
