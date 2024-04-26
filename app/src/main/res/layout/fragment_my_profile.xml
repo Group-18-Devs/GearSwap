@@ -17,7 +17,7 @@
         android:src="@drawable/ic_add_a_photo_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/gray" />
+        app:tint="@color/gearDarkBlue" />
 
     <ImageView
         android:id="@+id/profilePicture"
