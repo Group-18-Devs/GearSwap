@@ -14,9 +14,10 @@
     <!--Home Screen / Listing Feed Text-->
     <string name="gear_title">Gear Title</string>
     <string name="gear_description">Short description of the gear…</string>
+    <string name="price_format_with_currency">$ %2$.2f</string>
     <string name="gear_price_format">$%1$.2f per day</string>
     <string name="listing_item_image_description">Listing Item Image</string>
-    <string name="item_price_string">$%1$s</string>
+    <string name="item_price_string"> %1$s</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_home">Gear</string>

@@ -1,11 +1,13 @@
 package com.example.gearswap.ui.home
 
+import android.icu.text.NumberFormat
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.gearswap.R
 import com.example.gearswap.databinding.FragmentGearItemDetailBinding
@@ -22,6 +24,7 @@ private val args = GearItemDetailFragmentArgs
 class GearItemDetailFragment : Fragment() {
 
     private var gearItemId: Int? = null
+    //TODO:Refactor viewBinding
     private var _binding: FragmentGearItemDetailBinding? = null
     private val binding get() = _binding!!
 
@@ -50,9 +53,15 @@ class GearItemDetailFragment : Fragment() {
             Glide.with(this).load(item.imageUrl).placeholder(R.drawable.placeholder300)
                 .into(imageView)
             binding.textViewGearTitle.text = item.title
-            binding.textViewGearDescription.text = item.description
-            binding.textViewGearPrice.text = item.price.toString()
+            binding.textViewGearDescription.text = item.shortDescription
+            binding.textViewGearDescription2.text = item.longDescription
+            binding.textViewGearPrice.text = getString(
+                R.string.item_price_string, NumberFormat.getCurrencyInstance().format(item.price)
+            )
             binding.ratingBarGear.rating = item.rating
+            binding.buyNowButton.setOnClickListener {
+                findNavController().navigate(R.id.show_checkout)
+            }
 
         }
     }

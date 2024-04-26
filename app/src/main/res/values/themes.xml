@@ -9,9 +9,17 @@
         <item name="colorSecondary">#FFA500</item>
         <item name="colorSecondaryVariant">#EE6C4D</item>
         <item name="colorOnSecondary">#003E1F</item>
+        <item name="android:textColorPrimary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/bebas_neue</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!-- For API 21+ -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/colorPrimaryVariant</item>
+        <!-- Customize title color -->
     </style>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">

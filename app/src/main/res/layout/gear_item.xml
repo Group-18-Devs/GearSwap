@@ -7,11 +7,13 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp"
+
     android:background="?android:attr/selectableItemBackground">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+android:background="@color/silverlight"
         android:padding="16dp">
 
         <ImageView
@@ -41,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:paddingTop="8dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 tools:text="Running Shoes - Adidas Ultra Boost" />
 
             <RatingBar
@@ -65,7 +67,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingTop="4dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/gear_title_rating_layout"
@@ -76,7 +78,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingTop="4dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/gear_description"
