@@ -24,6 +24,7 @@ private val args = GearItemDetailFragmentArgs
 class GearItemDetailFragment : Fragment() {
 
     private var gearItemId: Int? = null
+    //TODO:Refactor viewBinding
     private var _binding: FragmentGearItemDetailBinding? = null
     private val binding get() = _binding!!
 
