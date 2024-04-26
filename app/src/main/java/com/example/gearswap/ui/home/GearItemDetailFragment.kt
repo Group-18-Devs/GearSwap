@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.gearswap.R
 import com.example.gearswap.databinding.FragmentGearItemDetailBinding
@@ -57,6 +58,9 @@ class GearItemDetailFragment : Fragment() {
                 R.string.item_price_string, NumberFormat.getCurrencyInstance().format(item.price)
             )
             binding.ratingBarGear.rating = item.rating
+            binding.buyNowButton.setOnClickListener {
+                findNavController().navigate(R.id.show_checkout)
+            }
 
         }
     }
