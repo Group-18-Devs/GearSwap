@@ -16,4 +16,7 @@
     <color name="colorSecondary">#FFA500</color>
     <color name="colorSecondaryVariant">#EE6C4D</color>
     <color name="colorOnSecondary">#003E1F</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="gearDarkBlue">#181829</color>
+    <color name="gearBlue">#4169E1</color>
 </resources>

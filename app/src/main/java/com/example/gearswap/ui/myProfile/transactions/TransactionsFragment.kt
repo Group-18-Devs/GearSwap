@@ -1,4 +1,4 @@
-package com.example.gearswap.ui.myProfile
+package com.example.gearswap.ui.myProfile.transactions
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -24,6 +24,6 @@ class TransactionsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_transactions, container, false)
+        return inflater.inflate(R.layout.fragment_orders, container, false)
     }
 }

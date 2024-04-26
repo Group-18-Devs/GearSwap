@@ -31,6 +31,8 @@
     <string name="price">Enter Price\n</string>
     <string name="title">Enter Title</string>
     <string name="Sports">Enter Sports</string>
+    <string name="i_am_a_baseball_enthusiast_i_rent_out_bats_baseballs_gloves_and_sell_gear_from_mlb_minor_leagues_and_series_caribe_check_out_my_collection_of_baseball_cards">I am a baseball enthusiast. I rent out bats, baseballs, gloves and sell gear from MLB, minor leagues and Series Caribe. Check out my collection of baseball cards!</string>
+    <string name="james_sportsman">James Sportsman</string>
 
     <!--Login Text -->
     <string name="prompt_email">Email</string>

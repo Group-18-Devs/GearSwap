@@ -51,12 +51,12 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.legacy.support.v4)
-    implementation(libs.androidx.recyclerview)
-    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation (libs.github.glide)
-    implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.viewpager2.viewpager2)
+    implementation(libs.androidx.recyclerview)
+    implementation (libs.github.glide)
+
 }

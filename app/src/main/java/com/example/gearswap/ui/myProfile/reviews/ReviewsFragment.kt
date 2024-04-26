@@ -1,4 +1,4 @@
-package com.example.gearswap.ui.myProfile
+package com.example.gearswap.ui.myProfile.reviews
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.gearswap.R
 
-class SavedItemsFragment : Fragment() {
+class ReviewsFragment : Fragment() {
 
     companion object {
-        fun newInstance() = SavedItemsFragment()
+        fun newInstance() = ReviewsFragment()
     }
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +23,6 @@ class SavedItemsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_saved, container, false)
-        //set textview
-
+        return inflater.inflate(R.layout.fragment_reviews, container, false)
     }
 }

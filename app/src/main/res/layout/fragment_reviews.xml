@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.myProfile.ReviewsFragment">
+    tools:context=".ui.myProfile.reviews.ReviewsFragment">
 
     <TextView
         android:layout_width="match_parent"

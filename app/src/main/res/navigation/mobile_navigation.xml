@@ -64,4 +64,5 @@
         android:name="com.example.gearswap.ui.home.checkout.ConfirmationFragment"
         android:label="fragment_confirmation"
         tools:layout="@layout/fragment_confirmation" />
+
 </navigation>

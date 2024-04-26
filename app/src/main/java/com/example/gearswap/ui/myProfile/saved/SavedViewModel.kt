@@ -1,11 +1,10 @@
-package com.example.gearswap.ui.myProfile
+package com.example.gearswap.ui.myProfile.saved
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MyProfileViewModel : ViewModel() {
-
+class SavedViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = " "
     }
