@@ -62,11 +62,11 @@ class GearItemDetailFragment : Fragment() {
             )
             binding.ratingBarGear.rating = item.rating
 
-            //TODO: Get random profile
+
             Glide.with(this)
                 .load(getProfilePicture(item.author))
 //                .centerCrop()
-                .circleCrop().placeholder(R.drawable.placeholder300).into(binding.profileImage)
+                .circleCrop().placeholder(R.drawable.baseline_account_circle_24).into(binding.profileImage)
 
             binding.textViewUserName.text = item.author
             binding.textViewUserLocation.text = getProfileLocation()
@@ -94,7 +94,7 @@ class GearItemDetailFragment : Fragment() {
             "JohnDoe123" -> "https://images.pexels.com/photos/1462980/pexels-photo-1462980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 
 
-            else -> "" //TODO:Placeholder Vector
+            else -> ""
         }
     }
 
