@@ -17,7 +17,7 @@
         android:src="@drawable/ic_add_a_photo_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/gearDarkBlue" />
+        app:tint="@color/black" />
 
     <ImageView
         android:id="@+id/profilePicture"
@@ -28,7 +28,7 @@
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/gray"
+        app:tint="#1A2A5A"
         android:contentDescription="@string/profile_picture" />
 
     <com.google.android.material.tabs.TabLayout
