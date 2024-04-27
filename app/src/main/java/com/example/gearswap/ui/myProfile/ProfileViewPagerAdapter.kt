@@ -5,7 +5,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.gearswap.ui.myProfile.Account.AccountFragment
 import com.example.gearswap.ui.myProfile.reviews.ReviewsFragment
 import com.example.gearswap.ui.myProfile.saved.SavedItemsListFragment
-import com.example.gearswap.ui.myProfile.transactions.TransactionsFragment
+import com.example.gearswap.ui.myProfile.orders.OrdersFragment
 
 class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
@@ -16,7 +16,7 @@ class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 //          TODO: Add additional fragments
             0 -> AccountFragment()
             1 -> SavedItemsListFragment()
-            2 -> TransactionsFragment()
+            2 -> OrdersFragment()
             else -> ReviewsFragment()
         }
     }

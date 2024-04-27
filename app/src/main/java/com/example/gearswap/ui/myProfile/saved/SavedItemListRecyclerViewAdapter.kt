@@ -3,25 +3,25 @@ package com.example.gearswap.ui.myProfile.saved
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gearswap.R
 import com.example.gearswap.databinding.GearItemBinding
+import com.example.gearswap.databinding.SavedItemBinding
 import com.example.gearswap.placeholder.PlaceholderContent
 import java.util.Locale
 
 class SavedItemListRecyclerViewAdapter(
     private val values: List<PlaceholderContent.PlaceholderItem>, private val onItemClick: (gearItemId: Int) -> Unit
 ) : RecyclerView.Adapter<SavedItemListRecyclerViewAdapter.ViewHolder>(){
-    inner class ViewHolder(binding: GearItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(binding: SavedItemBinding) : RecyclerView.ViewHolder
+        (binding.root) {
 
-        val savedTitleView: TextView = binding.gearTitle
-        val savedPriceView: TextView = binding.gearPrice
-        val savedDescriptionView: TextView = binding.gearDescription
-        val savedImageView: ImageView = binding.gearImage
-        val savedRatingView: RatingBar = binding.gearRating
+        val savedTitleView: TextView = binding.savedGearTitle
+        val savedPriceView: TextView = binding.savedGearPrice
+        val savedDescriptionView: TextView = binding.savedGearDescription
+        val savedImageView: ImageView = binding.savedGearImage
 
         init {
             binding.root.setOnClickListener {
@@ -34,7 +34,7 @@ class SavedItemListRecyclerViewAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
-                GearItemBinding.inflate(
+                SavedItemBinding.inflate(
                     LayoutInflater.from(parent.context), parent, false
                 )
             )
@@ -50,7 +50,6 @@ class SavedItemListRecyclerViewAdapter(
             )
         }"
         holder.savedDescriptionView.text = item.shortDescription
-        holder.savedRatingView.rating = item.rating
         Glide.with(holder.savedImageView.context).load(item.imageUrl)
             .placeholder(R.drawable.placeholder300).into(holder.savedImageView)
 

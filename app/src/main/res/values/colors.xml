@@ -8,7 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="silver">#C0C0C0</color>
-    <color name="silverlight">#f7f7ff</color>
     <color name="colorPrimary">#1a2a5a</color>
     <color name="colorPrimaryVariant">#181829</color>
     <color name="colorOnPrimary">#D3D3D3</color>
@@ -19,4 +18,5 @@
     <color name="gray">#D3D3D3</color>
     <color name="gearDarkBlue">#181829</color>
     <color name="gearBlue">#4169E1</color>
+    <color name="silverlight">#f7f7ff</color>
 </resources>

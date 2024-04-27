@@ -34,7 +34,7 @@ class AddListingFragment : Fragment() {
         binding.imageViewAddPhoto.setOnClickListener { showImagePickerOptions() }
         return root
     }
-    // TODO: Declare camera and storage permissions in manifest
+    // TODO: Handle Permission Requests
     private fun showImagePickerOptions() {
         val items = arrayOf("Take Photo", "Choose from Gallery", "Cancel")
         AlertDialog.Builder(requireContext())

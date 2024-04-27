@@ -1,4 +1,4 @@
-package com.example.gearswap.ui.myProfile.transactions
+package com.example.gearswap.ui.myProfile.orders
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.gearswap.R
 
-class TransactionsFragment : Fragment() {
+class OrdersFragment : Fragment() {
 
     companion object {
-        fun newInstance() = TransactionsFragment()
+        fun newInstance() = OrdersFragment()
     }
 
 

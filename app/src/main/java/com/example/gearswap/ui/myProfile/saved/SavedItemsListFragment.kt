@@ -45,8 +45,13 @@ class SavedItemsListFragment : Fragment() {
             columnCount <= 1 -> LinearLayoutManager(context)
             else -> GridLayoutManager(context, columnCount)
         }
+        //fixme: ???
+        val savedItems = PlaceholderContent.ITEMS.filterIndexed { index, _ ->
+            index %
+                3 == 0 }
+
         binding.savedItemsList.adapter =
-            SavedItemListRecyclerViewAdapter(PlaceholderContent.ITEMS, onItemClick = { itemId ->
+            SavedItemListRecyclerViewAdapter(savedItems, onItemClick = { itemId ->
                 findNavController().navigate(GearItemListFragmentDirections.showItemDetail(itemId))
             })
     }
