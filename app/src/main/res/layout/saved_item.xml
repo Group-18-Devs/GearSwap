@@ -1,81 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
-    app:cardElevation="4dp"
-    android:background="?android:attr/selectableItemBackground">
+    app:cardElevation="4dp">
 
-    <ImageView
-        android:id="@+id/saved_image"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:contentDescription="saved item"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <LinearLayout
-        android:id="@+id/saved_gear_rating_layout"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/saved_image">
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/saved_gear_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/listing_item_image_description"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/saved_gear_title"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:paddingTop="8dp"
+            android:layout_toEndOf="@id/saved_gear_image"
+            android:layout_marginStart="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Running Shoes - Adidas Ultra Boost" />
+            android:text="@string/gear_title"
+            tools:text="Mountain Bike" />
 
-        <RatingBar
-            android:id="@+id/saved_gear_rating"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/saved_gear_description"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|start"
-            android:layout_weight="2"
-            android:isIndicator="true"
-            android:numStars="5"
-            android:scaleX="0.5"
-            android:scaleY="0.5"
-            android:stepSize="0.5"
-            tools:rating="4.5" />
+            android:layout_below="@id/saved_gear_title"
+            android:layout_toEndOf="@id/saved_gear_image"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/gear_description"
+            tools:text="Excellent condition, perfect for trail rides." />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/saved_gear_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saved_gear_description"
+            android:layout_toEndOf="@id/saved_gear_image"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/gear_price_format"
+            tools:text="$15.00 per day" />
 
-
-    <TextView
-        android:id="@+id/saved_gear_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingTop="4dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/saved_gear_rating_layout"
-        tools:text="Excellent condition, perfect for trail rides." />
-
-    <TextView
-        android:id="@+id/gear_price"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingTop="4dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/saved_gear_description"
-        tools:text="$15.00 per day" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -3,7 +3,6 @@ package com.example.gearswap.ui.myProfile.saved
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -21,7 +20,6 @@ class SavedItemListRecyclerViewAdapter(
         val savedPriceView: TextView = binding.gearPrice
         val savedDescriptionView: TextView = binding.gearDescription
         val savedImageView: ImageView = binding.gearImage
-        val savedRatingView: RatingBar = binding.gearRating
 
         init {
             binding.root.setOnClickListener {
@@ -50,7 +48,6 @@ class SavedItemListRecyclerViewAdapter(
             )
         }"
         holder.savedDescriptionView.text = item.description
-        holder.savedRatingView.rating = item.rating
         Glide.with(holder.savedImageView.context).load(item.imageUrl)
             .placeholder(R.drawable.placeholder300).into(holder.savedImageView)
 
