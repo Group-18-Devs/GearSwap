@@ -160,4 +160,35 @@ GearSwap is a user-friendly, community-driven platform for renting and sharing s
 
 <br>
 
+# Milestone 3 - Build Sprint 2 (Unit 9)
+
+## GitHub Project board
+
+<img src="https://github.com/Group-18-Devs/GearSwap/assets/106501057/3741fffd-4230-435e-8f02-684065563c09" alt="Sprint 3 Board" width=600>
+<!--![gearswapprojectb3](https://github.com/Group-18-Devs/GearSwap/assets/106501057/3741fffd-4230-435e-8f02-684065563c09)-->
+
+
+## Completed user stories
+
+- ### Completed:
+    - User can browse and rent items(completing transaction)
+    - User can post item for rent or sale
+- ### Pending:
+    - User can search for specific items or filter by item category
+    - User can add reviews of rented/purchased items
+    
+
+![Gear Swap Checkout flow](https://github.com/Group-18-Devs/GearSwap/assets/106501057/8559800e-cc57-4d83-8bdb-e39e8740a374)
+![Gear Swap Account Screens](https://github.com/Group-18-Devs/GearSwap/assets/106501057/be5aca76-c41d-4ea0-8b6c-a17c9db14081)
+
+
+<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+
+
+
+## App Demo Video
+
+https://github.com/Group-18-Devs/GearSwap/assets/106501057/8f61a1e6-5584-40c6-bba0-4652acc9a2a7
+
 
