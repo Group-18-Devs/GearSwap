@@ -21,6 +21,8 @@ cardview = "1.0.0"
 annotation = "1.7.1"
 stripeAndroid = "20.41.0"
 volley = "1.2.1"
+googleGmsGoogleServices = "4.4.2"
+firebaseAnalytics = "22.0.1"
 
 
 [libraries]
@@ -45,8 +47,10 @@ androidx-cardview = { group = "androidx.cardview", name = "cardview", version.re
 androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 stripe-android = { module = "com.stripe:stripe-android", version.ref = "stripeAndroid" }
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebaseAnalytics" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+googleGmsGoogleServices = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 
